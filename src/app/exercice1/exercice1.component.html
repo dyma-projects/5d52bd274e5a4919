@@ -1,0 +1,8 @@
+<h2>Exercice 1 - Les interpollations</h2>
+<hr />
+<a [href]="linkHref" target="_blank" rel="noopener">{{ nomLienMystere }}</a>
+<figure>
+    <img [src]="imageSrc" [alt]="imageAlt">
+    <figcaption [style.backgroundColor]="bgColor" (mouseenter)="changeBgColor('lightcoral')"
+        (mouseleave)="changeBgColor('lightskyblue')"><strong>{{ imageAlt }}</strong></figcaption>
+</figure>

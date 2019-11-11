@@ -1,0 +1,8 @@
+<h2>Exercice 3 - Condition au click</h2>
+<hr />
+
+<button (click)="statut=!statut">Changez de paragraphe au clic : <small><em>Valeur actuelle : </em><strong>{{ statut }}</strong></small></button>
+
+<p *ngIf="statut === true"><strong>PARAGRAPHE 1</strong> ------- Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi aut dolore tenetur perferendis, unde modi ex quis ratione nesciunt nam! Reiciendis tempora perspiciatis numquam consequuntur rerum. Magni ducimus repudiandae dignissimos? Officiis tempore nihil delectus hic ipsam ullam, quia quibusdam necessitatibus facere natus nam quae quos. Sunt fugiat deleniti quidem!</p>
+
+<p *ngIf="statut === false"><strong>PARAGRAPHE 2</strong> ------- Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi aut dolore tenetur perferendis, unde modi ex quis ratione nesciunt nam! Reiciendis tempora perspiciatis numquam consequuntur rerum. Magni ducimus repudiandae dignissimos?</p>
